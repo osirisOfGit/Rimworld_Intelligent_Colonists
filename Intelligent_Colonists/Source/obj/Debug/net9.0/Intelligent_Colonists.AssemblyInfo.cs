@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Intelligent_Colonists")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6af7a06fcc2e221ffa2a5f96ef0980883825bd31")]
 [assembly: System.Reflection.AssemblyProductAttribute("Intelligent_Colonists")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Intelligent_Colonists")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
