@@ -13,10 +13,9 @@ namespace IntelligentColonists
         [HarmonyPatch(typeof(Pawn_JobTracker), "StartJob")]
         static class Pawn_JobTracker_StartJob_IntelligentColonistsPatch
         {
-            internal static bool Prefix(Job newJob)
+            internal static void Prefix(Job newJob)
             {
-                Log.Message("Starting a job!");
-                return true;
+                Log.Message("Starting");
             }
         }
     }

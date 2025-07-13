@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Rimworld",
+			"type": "shell",
+			"command": "Start-Process",
+			"args": [
+				"-FilePath",
+				"D:\\Steamy\\steamapps\\common\\RimWorld\\RimWorldWin64.exe",
+				"-ArgumentList",
+				"-quicktest",
+				"-WorkingDirectory",
+				"D:\\Steamy\\steamapps\\common\\RimWorld\\"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"options": {
+				"shell": {
+					"executable": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+				}
+			},
+		}
+	]
+}
