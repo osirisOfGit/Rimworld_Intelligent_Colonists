@@ -1,14 +1,35 @@
-﻿using RimWorld;
+﻿using System.Reflection;
+using HarmonyLib;
+using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace IntelligentColonists
 {
-    [StaticConstructorOnStartup]
-    public static class IntelligentColonists
+	public class IntelligentColonists : Mod
     {
-        static IntelligentColonists()
+        public IntelligentColonists(ModContentPack content) : base(content)
         {
-            Log.Message("Hello World!");
+            Log.Message("Started!");
+            var harmony = new Harmony("rimworld.osirisofrimworld.intelligentcolonists");
+            harmony.PatchAll();
         }
+
+        // public static Settings? Settings;
+
+        // public static void Save()
+        // {
+        //     LoadedModManager.GetMod<IntelligentColonists>().GetSettings<Settings>().Write();
+        // }
+
+        public override string SettingsCategory()
+        {
+            return "IntelligentColonists";
+        }
+
+        // public override void DoSettingsWindowContents(Rect inRect)
+        // {
+        //     Settings.DoSettingsWindowContents(inRect);
+        // }
     }
 }

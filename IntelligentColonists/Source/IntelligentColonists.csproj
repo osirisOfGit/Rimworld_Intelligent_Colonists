@@ -1,9 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <!-- mklink /J "D:\Steamy\steamapps\common\RimWorld\Mods\IntelligentColonists" "D:\Mods\Rimworld\Rimworld_Intelligent_Colonists\IntelligentColonists\Mod" -->
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFramework>net4.7.2</TargetFramework>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
@@ -34,5 +33,8 @@
       <HintPath>D:\Steamy\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-  </ItemGroup>
+    <PackageReference Include="Lib.Harmony">
+      <Version>2.3.6</Version>
+    </PackageReference>
+    </ItemGroup>
 </Project>

@@ -8,6 +8,12 @@
 		},
 		{
 			"path": "../../RimWorld_CommonSense"
+		},
+		{
+			"path": "../../HarmonyRimWorld"
+		},
+		{
+			"path": "../../clean-pathfinding"
 		}
 	],
 	"settings": {
